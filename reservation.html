@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAM Hotel</title>
+    <link rel="shortcut icon" href="asset/img/logo/zam.png" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="vendor/css/style.css">
+    <link rel="stylesheet" href="vendor/swiper/package/swiper-bundle.min.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+</head>
+<body>
+
+    <!--Header Section-->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="asset/img/logo/zam.png" style="width: 90px;" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideBarCanvas" aria-controls="sideBarCanvas">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" id="nav-link-active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="reservation.html">Reservation</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="#">Restoran & Kuliner</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="#">Event & Promo</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="#">Gallery</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!--SIDEBAR-->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="sideBarCanvas" aria-labelledby="sideBarCanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sideBarCanvasLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+        </div>
+      </div>
+    <!--End SIDEBAR-->
+    <!--End Header Section-->
+
+    <!--Heroes / Carousel-->
+    <section class="heroes container-fluid" style="background-color: #39290a;">
+        <div class="row">
+            <div class="col-sm-12 col-12 text-center my-5 py-5">
+              <h5 class="heroes-title" data-aos="fade-up" data-aos-duration="1000"><span class="heroes-title-sub">Reservation</span></h5>
+              <p class="heroes-sub-title" data-aos="fade-up" data-aos-duration="1200">Reservasi, Restoran & Kuliner</p>              
+            </div>
+        </div>
+    </section>
+
+    <!-- End Heroes / Carousel-->
+
+
+
+    <!--End Section Type Kamar-->
+    <!-- Border -->
+    <div class="container mt-5 text-center">
+      <img src="asset/img/vector/border.png" class="border-contact" alt="">
+    </div>
+    <!-- End Border -->
+
+
+    <!-- Contact Section -->
+    <section class="contact">
+
+      <div class="container py-5">
+
+        <div class="row mt-5">
+
+          <div class="col-md-12">
+
+            <div class="card">
+                <div class="card-header" style="background-color: #39290a">
+                    <h5 class="card-title text-center" style="color: #fff;">Form Reservation</h5>
+                </div>
+                <div class="card-body">
+
+                    <div class="mb-3">
+                        <input type="text" class="form-reservation" placeholder="Nama Lengkap">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-reservation" placeholder="No Hp/What'sApp">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-reservation" placeholder="Email">
+                    </div>
+
+                    <div class="mb-3">
+                        <select name="tipe" id="tipe" class="form-reservation">
+                            <option value="">== Pilih Tipe Kamar ==</option>
+                            <option value="Deluxe">Deluxe</option>
+                            <option value="Deluxe">Suite</option>
+                            <option value="Deluxe">BaalRoom</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" id="kodeUndangan" class="form-reservation" placeholder="Kode Undangan">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <button class="btn" style="background-color: #39290a;color: #fff;">Reservation</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Contact -->
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row mt-5">
+
+          <div class="col-md-4 my-5">
+            <p class="nama-footer">ZAM <span class="hotel-footer">Hotel</span></p>
+
+            <p class="alamat-footer">Jl. KH. R. Abdullah Bin Nuh, RT.05/RW.01, <br> Sindangbarang, Kec. Bogor Barat, <br> Kota Bogor, Jawa Barat 16117</p>
+          </div>
+
+          <div class="col-md-4 my-5">
+            <p class="footer-info-title">Contact Information</p>
+            <p class="footer-info mt-4"><i class="bi bi-telephone-fill me-2"></i> 0 251 200 3015</p>
+            <p class="footer-info" style="margin-top: -10px;"><i class="bi bi-telephone-fill me-2"></i> 0 251 200 3014</p>
+
+            <p class="footer-info-title mt-4">Contact Admin</p>
+            <p class="footer-info mt-4"><i class="bi bi-whatsapp me-2"></i> +62 895 3552 88314</p>
+            <p class="footer-info" style="margin-top: -10px;"><i class="bi bi-whatsapp me-2"></i> +62 851 5980 5488</p>
+          </div>
+
+          <div class="col-md-4 my-5">
+            <p class="footer-info-title">Follow Us</p>
+            <a href="" class="btn ms-2" style="background-color: #fff; color: red;"><i class="bi bi-instagram"></i></a>
+            <a href="" class="btn ms-2" style="background-color: #fff; color: rgb(0, 0, 0);"><i class="bi bi-tiktok"></i></a>
+            <a href="" class="btn ms-2" style="background-color: #fff; color: rgb(255, 0, 0);"><i class="bi bi-youtube"></i></a>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <p class="text-white mark-footer">&copy; ZAM Hotel Bogor</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <!-- End Footer -->
+
+
+
+
+
+
+    <!--Script-->
+    <script src="vendor/swiper/package/swiper-bundle.min.js"></script>
+    <script src="vendor/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,  // Infinite looping
+            autoplay: {
+                delay: 4000, // 4 detik per slide
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+    </script>    
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const kodeUndangan = urlParams.get("kode");
+
+        if (kodeUndangan) {
+            const inputField = document.getElementById("kodeUndangan");
+            inputField.value = kodeUndangan;
+            inputField.disabled = true;
+        }
+    });
+</script>
+
+    <!--Bootstrap-->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

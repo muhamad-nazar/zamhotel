@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faculty+Glyphic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1030;
+    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.header.transparent {
+    background-color: transparent;
+}
+
+.header.scrolled {
+    background-color: #39290a; /* Warna background saat di-scroll */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.header .nav-link {
+    transition: color 0.4s ease-in-out;
+}
+
+.header.transparent .nav-link {
+    color: #39290a;
+}
+
+.header.scrolled .nav-link {
+    color: white;
+}
+
+.header.transparent #nav-link-active {
+    color: #39290a;
+}
+
+.header.scrolled #nav-link-active {
+    color: white;
+}
+
+
+.nav-item,.nav-link {
+    font-size: 0.8em;
+    transition: all 0.3s ease-in-out; /* Efek transisi */
+}
+
+#nav-link-active {
+    font-weight: bolder;
+}
+
+/* Efek timbul saat hover */
+.nav-item, .nav-link:hover {
+    color: #ffb703; /* Warna saat hover (ganti sesuai tema) */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Efek bayangan biar tampak timbul */
+    transform: scale(1.1); /* Sedikit membesar */
+}
+
+
+/* End Header */
+
+/* Heroes */
+.heroes-image {
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    width: 500px;
+}
+
+/* Efek saat hover */
+.heroes-image:hover {
+    transform: perspective(1000px) rotateY(10deg) rotateX(5deg) scale(1.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.heroes-title {
+    font-size: 5rem;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    font-weight: 600;
+}
+.heroes-title-sub {
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: "Bebas Neue", serif;
+}
+
+.heroes-sub-title {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.btn-for-menu {
+    background-color: #39290a;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px;
+    font-family: "Playfair Display", serif;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-for-menu:hover {
+    transform: scale(1.1);
+}
+
+/* Elemen untuk animasi border */
+.btn-for-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    opacity: 0; /* Tidak terlihat awalnya */
+    transition: opacity 0.2s ease-in-out; /* Animasi fade in */
+}
+
+/* Saat hover, border muncul dan animasi berjalan */
+.btn-for-menu:hover::before {
+    opacity: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Efek bayangan biar tampak timbul */
+    animation: borderAnimation 1.5s linear infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-top: 3px solid #ffffff;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
+    25% {
+        border-top: 3px solid transparent;
+        border-right: 3px solid #ffffff;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
+    50% {
+        border-top: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid #ffffff;
+        border-left: 3px solid transparent;
+    }
+    75% {
+        border-top: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid #ffffff;
+    }
+    100% {
+        border-top: 3px solid #ffffff;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
+}
+/* End Heroes */
+
+/* Features/Type Kamar */
+.card-features {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background: none;
+}
+
+.features-image {
+    width: 100%;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    transform-style: preserve-3d;
+}
+
+/* Efek saat hover */
+.card-features:hover .features-image {
+    transform: perspective(1000px) rotateY(10deg) rotateX(5deg) scale(1.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Tombol "Detail" di tengah gambar */
+
+/* Munculkan tombol saat hover */
+.card-features:hover .detail-button {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Efek hover tombol */
+.detail-button:hover {
+    background: #ff0000;
+}
+
+.features {
+    background-color: #39290a;
+}
+.features-title {
+    color: #fff;
+    font-family: "Faculty Glyphic", serif;
+    font-weight: 550;
+    font-size: 1.5rem;
+}
+.features-image {
+    cursor: pointer;
+    width: 100%;
+}
+
+.features-detail {
+    font-family: "Faculty Glyphic", serif;
+    color: #39290a;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 550;
+}
+
+.elang-kiri {
+    margin-top: -100px;
+    margin-left: -50px;
+}
+
+.elang-kanan {
+    margin-top: -100px;
+    margin-left: -85px;
+}
+
+/* Sembunyikan elang di awal */
+/* Sembunyikan elang di awal */
+.elang-kiri,
+.elang-kanan {
+    position: absolute;
+    width: 130px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
+
+/* Posisi awal elang */
+.elang-kiri {
+    transform: translateX(50px);
+}
+
+.elang-kanan {
+    transform: translateX(-50px);
+}
+
+/* Tombol "Detail" di tengah gambar */
+.detail-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background: #ca0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Faculty Glyphic", serif;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Efek tombol muncul saat hover */
+.card-features:hover .detail-button {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Efek hover tombol */
+.detail-button:hover {
+    background: #ff0000;
+}
+
+/* End Features/Type Kamar */
+
+/* Event and Promo */
+.event-head {
+    font-family: "Faculty Glyphic", serif;
+    color: #39290a;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.event-image-card {
+    width: 100%;
+    height: 250px;
+}
+
+.event-title-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 10px;
+    font-family: "Faculty Glyphic", serif;
+}
+
+.tgl-card-event {
+    font-size: 0.7rem;
+    align-items: end;
+    text-align: right;
+    font-weight: 450;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.detail-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ca0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.image-container:hover .detail-button {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Efek hover membesarkan card */
+.card-event {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Saat hover, card membesar sedikit */
+.card-event:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Tambahin shadow biar lebih elegan */
+}
+
+.border-contact {
+    width: 300px;
+}
+
+/* End Event & Promo */
+
+
+/* Section Contact */
+.contact-title {
+    font-size: 1.1rem;
+    font-family: "Bebas Neue", serif;
+    font-weight: 550;
+    color: #39290a;
+}
+
+label {
+    font-family: "Faculty Glyphic", serif;
+}
+
+#btn-contact {
+    color: #fff;
+    font-family: "Faculty Glyphic", serif;
+}
+
+.send-mess-title {
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", serif;
+    font-weight: 550;
+    color: #39290a;
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+}
+  
+.contact-information {
+    font-size: 1rem;
+    font-family: "Bebas Neue", serif;
+}
+
+/* Efek saat ada inputan yang aktif */
+.card-contact:has(.form-inputs:focus) {
+    background-color: #39290a !important;
+    color: white !important;
+    box-shadow: 0px 0px 15px rgba(57, 41, 10, 0.7) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efek biar teks di dalam card-contact tetap terlihat */
+.card-contact:has(.form-inputs:focus) .send-mess-title {
+   color: #fff;
+}
+
+/* Placeholder text biar tetap terbaca */
+.card-contact:has(.form-inputs:focus) #btn-contact {
+    color: #39290a;
+    background-color: #fff;
+}
+
+/* Efek hover & focus pada button */
+#btn-contact {
+    color: white;
+    background-color: #39290a;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#btn-contact:hover,
+#btn-contact:focus {
+    background-color: white !important;
+    color: #39290a !important;
+    box-shadow: 0px 0px 10px rgba(57, 41, 10, 0.7) !important;
+}
+
+/* End Section Contact */
+
+/* Section Footer */
+.footer {
+    background-color: #39290a;
+}
+
+.mark-footer {
+    font-family: "Bebas Neue", serif;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.nama-footer {
+    font-size: 3.5rem;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    font-weight: 600;
+}
+.hotel-footer {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Bebas Neue", serif;
+}
+
+.alamat-footer {
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.footer-info-title {
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+}
+
+.footer-info {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: "Bebas Neue", serif;
+}
+/* End Footer */
+
+/* Form Control */
+.form-reservation {
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #39290a;
+}
+
+/* End Form */
+/* Tab and Android Pages */
+
+.mobile {
+    display: none;
+}
+
+/* Heroes */
+@media screen and (max-width: 400px) {
+    .mobile {
+        display: block;
+    }
+    
+    .desktop {
+        display: none;
+    }
+
+    /* Top Bar Logo */
+    .topbar-mobile {
+        background-color: #ffffff;
+    }
+    .logo-mobile {
+        width: 130px;
+    }
+
+    /* Splash Menu Top */
+    .splash-mobile-top {
+        
+        width: 100%;
+        border-radius: 18px;
+    }
+    /* End Top */
+
+    .divider-mobile {
+        width: 100%;
+        height: 5px;
+        background-color: #f8f9fa;
+    }
+
+    /* Carousel Mobile Kamar */
+    .carousel-mobile-title {
+        font-size: 0.9rem;
+        margin-top: 10px;
+        font-family: "Playfair Display", serif;
+        color: #000000;
+        font-weight: 600;
+    }
+    .swiper {
+        width: 100%;
+        height: 280px; /* Sesuaikan tinggi carousel */
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      .swiper-slide img {
+        width: 90%; /* Supaya tidak full dan ada jarak */
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      
+      
+      .room-title {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 0.8rem;
+        font-family: "Playfair Display", serif;
+        color: #000000;
+      }
+
+
+        .promo-title {
+            display: flex;
+            justify-content: space-between; /* Biar teks ke kiri & tanggal ke kanan */
+            align-items: center; /* Biar sejajar */
+            width: 90%; /* Pastikan elemen memenuhi lebar */
+            margin: 10px auto; /* Biar rapi */
+            font-weight: bold;
+            font-size: 0.8rem;
+            font-family: "Playfair Display", serif;
+            color: #000000;
+            text-align: left;
+        }
+        .promo-title span {
+            font-weight: 500;
+            font-size: 0.7rem;
+            color: #000000; /* Bisa diubah sesuai tema */
+        }
+    
+
+    /* Menghilangkan tombol default */
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+    display: none; /* Sembunyikan ikon default */
+    }
+
+    /* Custom tombol next */
+    .swiper-button-next {
+    background: url('../../asset/img/vector/icon/next.png') no-repeat center center;
+    background-size: contain;
+    width: 40px; /* Sesuaikan ukuran tombol */
+    height: 40px;
+    right: 10px; /* Posisi di kanan */
+    }
+
+    /* Custom tombol prev */
+    .swiper-button-prev {
+    background: url('../../asset/img/vector/icon/prev.png') no-repeat center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    left: 10px; /* Posisi di kiri */
+    }
+
+    /* Mengatur posisi pagination */
+    .kamarMobile {
+        height: auto; /* Supaya tidak terlalu tinggi */
+        padding-bottom: 30px; /* Sesuaikan padding bawah */
+    }
+
+    /* Bottom Bar */
+    /* Bottom bar tetap di bawah tanpa berubah ukuran */
+    .bottom-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        padding: 5px 0 0px 0;
+        z-index: 1000;
+    }
+
+    /* Styling menu */
+    .bottom-bar .col {
+        padding: 5px;
+        position: relative; /* Biar efek lingkaran tidak mengubah ukuran bottom bar */
+    }
+
+    .bottom-bar a {
+        text-decoration: none;
+        color: #333;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        transition: all 0.3s ease-in-out; /* Animasi smooth */
+    }
+
+    /* Ukuran ikon */
+    .bottom-bar img {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Efek aktif */
+    .bottom-bar a.active {
+        color: rgb(0, 0, 0); /* Teks tetap hitam */
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Tambahkan efek lingkaran hijau dengan animasi */
+    .bottom-bar a.active::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: #39290a; /* Warna hijau */
+        border-radius: 50%;
+        top: -5px; /* Start dari lebih bawah */
+        left: 50%;
+        transform: translateX(-50%) scale(0.5);
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Hanya ikon & teks yang naik, bottom bar tetap fix */
+    .bottom-bar a.active img,
+    .bottom-bar a.active p {
+        position: relative;
+        top: -5px; /* Naik dikit tanpa mengubah bottom bar */
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Ubah ikon jadi putih saat aktif */
+    .bottom-bar a.active img {
+        filter: brightness(0) invert(1);
+    }
+
+    /* Efek animasi masuk */
+    .bottom-bar a.active::before {
+        top: -15px; /* Naik lebih smooth */
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+
+        
+        
+        
+    
+  
+
+      
+}
+
+/* End Heroes */

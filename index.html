@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ZAM Hotel</title>
+    <link rel="shortcut icon" href="asset/img/logo/zam.png" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="vendor/css/style.css">
+    <link rel="stylesheet" href="vendor/swiper/package/swiper-bundle.min.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+</head>
+<body>
+
+    <div class="desktop">
+        <!--Header Section-->
+      <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="asset/img/logo/zam.png" style="width: 90px;" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideBarCanvas" aria-controls="sideBarCanvas">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" id="nav-link-active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="reservation.html">Reservation</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="#">Restoran & Kuliner</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="#">Event & Promo</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="#">Undangan</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="#">Gallery</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!--SIDEBAR-->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="sideBarCanvas" aria-labelledby="sideBarCanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sideBarCanvasLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+        </div>
+      </div>
+    <!--End SIDEBAR-->
+    <!--End Header Section-->
+
+    <!--Heroes / Carousel-->
+    <section class="heroes container-fluid" style="background-color: #39290a;">
+        <div class="row">
+            <div class="col-sm-6 col-6 text-center">
+                <img src="asset/img/vector/zam.png" class="heroes-image my-5" alt="">
+            </div>
+            <div class="col-sm-6 col-6 d-flex flex-column justify-content-center">
+              <h5 class="heroes-title" data-aos="fade-up" data-aos-duration="1000">ZAM <span class="heroes-title-sub">Hotel</span></h5>
+              <p class="heroes-sub-title" data-aos="fade-up" data-aos-duration="1200">Reservasi, Restoran & Kuliner</p>              
+            </div>
+        </div>
+    </section>
+    
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-6 text-end col-6">
+          <a href="reservation.html" class="btn-for-menu">Reservasi</a>
+        </div>
+        <div class="col-md-6 text-start col-6">
+          <a href="" class="btn-for-menu">Daftar Menu</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Heroes / Carousel-->
+
+
+    <!--Section Type Kamar-->
+    <section class="features">
+      <div class="container py-5">
+        <p class="features-title">Kamar & Fasilitas</p>
+        <div class="row mt-5">
+
+          <!-- Looping -->
+          <div class="col-md-4">
+              <div class="card card-features">
+                  <div class="card-body">
+                      <img src="asset/img/vector/zam.png" class="features-image" alt="">
+                      <button class="detail-button">Reservasi</button>
+                      <p class="features-detail">Deluxe Room</p>
+                      <div class="row">
+                          <div class="col-md-6 text-start">
+                              <img src="asset/img/vector/elang-kanan.png" class="elang-kiri" alt="">
+                          </div>
+                          <div class="col-md-6 text-end">
+                              <img src="asset/img/vector/elang-kiri.png" class="elang-kanan" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="asset/img/vector/zam.png" class="features-image" alt="">
+                    <button class="detail-button">Reservasi</button>
+                    <p class="features-detail">Deluxe Room</p>
+                    <div class="row">
+                        <div class="col-md-6 text-start">
+                            <img src="asset/img/vector/elang-kanan.png" class="elang-kiri" alt="">
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <img src="asset/img/vector/elang-kiri.png" class="elang-kanan" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="asset/img/vector/zam.png" class="features-image" alt="">
+                    <button class="detail-button">Reservasi</button>
+                    <p class="features-detail">Deluxe Room</p>
+                    <div class="row">
+                        <div class="col-md-6 text-start">
+                            <img src="asset/img/vector/elang-kanan.png" class="elang-kiri" alt="">
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <img src="asset/img/vector/elang-kiri.png" class="elang-kanan" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- looping -->
+
+        </div>
+      </div>
+      
+    </section>
+
+    <!--End Section Type Kamar-->
+    <section class="event">
+        <div class="container py-5">
+            <p class="event-head text-center">Event & Promo</p>
+            <div class="row mt-5">
+                <!-- LOOPING -->
+                <div class="col-md-4">
+                    <div class="card card-event">
+                        <div class="card-body">
+                            <div class="image-container">
+                                <img src="asset/img/vector/zam.png" class="event-image-card" alt="">
+                                <button class="detail-button">Detail</button>
+                            </div>
+                            <p class="event-title-card">Promo Lebaran 
+                                <span class="text-end tgl-card-event">02-08-2024</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card card-event">
+                      <div class="card-body">
+                          <div class="image-container">
+                              <img src="asset/img/vector/zam.png" class="event-image-card" alt="">
+                              <button class="detail-button">Detail</button>
+                          </div>
+                          <p class="event-title-card">Promo Lebaran 
+                              <span class="text-end tgl-card-event">02-08-2024</span>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card card-event">
+                    <div class="card-body">
+                        <div class="image-container">
+                            <img src="asset/img/vector/zam.png" class="event-image-card" alt="">
+                            <button class="detail-button">Detail</button>
+                        </div>
+                        <p class="event-title-card">Promo Lebaran 
+                            <span class="text-end tgl-card-event">02-08-2024</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!-- Looping -->
+            </div>
+        </div>
+    </section>
+    <!-- Section Event & Promo  -->
+
+    <!-- Border -->
+    <div class="container text-center">
+      <img src="asset/img/vector/border.png" class="border-contact" alt="">
+    </div>
+    <!-- End Border -->
+
+
+    <!-- Contact Section -->
+    <section class="contact">
+
+      <div class="container py-5">
+        <p class="event-head">Contact</p>
+
+        <div class="row mt-5">
+
+          <div class="col-md-6">
+
+            <div class="card card-contact">
+              <div class="card-body">
+
+                <p class="contact-title">Contact Information</p>
+
+                <div class="row mt-3">
+                  <div class="col-sm-6 mt-2 d-flex align-items-center">
+                    <i class="bi bi-telephone-fill me-2 contact-icon"></i> 
+                    <div></div>
+                    <div class="contact-information">
+                      <p class="mb-0">0 251 200 3015 <a href="" class="text-decoration-none"><i class="bi bi-link-45deg"></i></a></p>
+                      <p class="mb-0">0 251 200 3014 <a href="" class="text-decoration-none"><i class="bi bi-link-45deg"></i></a></p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 mt-2 d-flex align-items-center">
+                    <i class="bi bi-whatsapp me-2 contact-icon"></i> 
+                    <div></div>
+                    <div class="contact-information">
+                      <p class="mb-0">0895 3552 88314 <a href="" class="text-decoration-none"><i class="bi bi-link-45deg"></i></a></p>
+                      <p class="mb-0">0851 5980 5488 <a href="" class="text-decoration-none"><i class="bi bi-link-45deg"></i></a></p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 mt-4 d-flex align-items-center">
+                    <i class="bi bi-envelope me-2 contact-icon"></i> 
+                    <div></div>
+                    <div class="contact-information">
+                      <p class="mb-0">zamhotelbogor@gmail.com <a href="" class="text-decoration-none"><i class="bi bi-link-45deg"></i></a></p>
+                      <p class="mb-0">adminzam@zamhotelbogor.com <a href="" class="text-decoration-none"><i class="bi bi-link-45deg"></i></a></p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 mt-4 d-flex align-items-center">
+                    <i class="bi bi-instagram me-2 contact-icon"></i> 
+                    <div></div>
+                    <div class="contact-information">
+                      <p class="mb-0">zamhotelbogor <a href="" class="text-decoration-none"><i class="bi bi-link-45deg"></i></a></p>
+                      <p class="mb-0"></p>
+                    </div>
+                  </div>
+
+                </div>
+                
+                
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="card card-contact">
+              <div class="card-body">
+                <p class="text-center send-mess-title">Send Message</p>
+                <hr>
+
+                <form action="" method="POST">
+                  
+                  <div class="mb-3">
+                    <label for="nama"><span class="text-danger" style="font-size: 0.5rem;">*Wajib diisi</span></label>
+                    <input type="text" name="nama" class="form-control form-inputs" placeholder="Masukan Nama">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email"><span class="text-danger" style="font-size: 0.5rem;">*Wajib diisi</span></label>
+                    <input type="email" name="email" class="form-control form-inputs" placeholder="Masukan Email">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="wa"><span class="text-info" style="font-size: 0.5rem;">*Optional</span></label>
+                    <input type="text" name="wa" class="form-control form-inputs" placeholder="Masukan Nomor What's App">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="message"><span class="text-danger" style="font-size: 0.5rem;">*Wajib diisi</span></label>
+                    <textarea name="message" id="message" class="form-control form-inputs" placeholder="Masukan Pesan"></textarea>
+                  </div>
+
+                  <button class="btn" id="btn-contact">Submit</button>
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Contact -->
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row mt-5">
+
+          <div class="col-md-4 my-5">
+            <p class="nama-footer">ZAM <span class="hotel-footer">Hotel</span></p>
+
+            <p class="alamat-footer">Jl. KH. R. Abdullah Bin Nuh, RT.05/RW.01, <br> Sindangbarang, Kec. Bogor Barat, <br> Kota Bogor, Jawa Barat 16117</p>
+          </div>
+
+          <div class="col-md-4 my-5">
+            <p class="footer-info-title">Contact Information</p>
+            <p class="footer-info mt-4"><i class="bi bi-telephone-fill me-2"></i> 0 251 200 3015</p>
+            <p class="footer-info" style="margin-top: -10px;"><i class="bi bi-telephone-fill me-2"></i> 0 251 200 3014</p>
+
+            <p class="footer-info-title mt-4">Contact Admin</p>
+            <p class="footer-info mt-4"><i class="bi bi-whatsapp me-2"></i> +62 895 3552 88314</p>
+            <p class="footer-info" style="margin-top: -10px;"><i class="bi bi-whatsapp me-2"></i> +62 851 5980 5488</p>
+          </div>
+
+          <div class="col-md-4 my-5">
+            <p class="footer-info-title">Follow Us</p>
+            <a href="" class="btn ms-2" style="background-color: #fff; color: red;"><i class="bi bi-instagram"></i></a>
+            <a href="" class="btn ms-2" style="background-color: #fff; color: rgb(0, 0, 0);"><i class="bi bi-tiktok"></i></a>
+            <a href="" class="btn ms-2" style="background-color: #fff; color: rgb(255, 0, 0);"><i class="bi bi-youtube"></i></a>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <p class="text-white mark-footer">&copy; ZAM Hotel Bogor</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <!-- End Footer -->
+
+    </div>
+
+
+
+    <div class="mobile">
+      <div class="container-fluid mt-2 topbar-mobile">
+
+        <!-- Logo -->
+        <div class="row">
+          <div class="col-12 col-sm-12">
+            <img src="asset/img/logo/zam-mobile.png" class="logo-mobile" alt="">
+          </div>
+        </div>
+        <!-- End Logo -->
+
+        <!--Splash Menu-->
+        <div class="row mt-4 justify-content-center g-2">
+
+          <div class="col-3 col-sm-3">
+            <a href="" style="cursor: pointer;">
+              <img src="asset/img/splash/reserv.png" class="splash-mobile-top" alt="">
+            </a>
+          </div>
+
+          <div class="col-3 col-sm-3">
+            <a href="" style="cursor: pointer;">
+              <img src="asset/img/splash/resto.png" class="splash-mobile-top" alt="">
+            </a>
+          </div>
+
+          <div class="col-3 col-sm-3">
+            <a href="" style="cursor: pointer;">
+              <img src="asset/img/splash/fasilitas.png" class="splash-mobile-top" alt="">
+            </a>
+          </div>
+
+          <div class="col-3 col-sm-3">
+            <a href="" style="cursor: pointer;">
+              <img src="asset/img/splash/undangan.png" class="splash-mobile-top" alt="">
+            </a>
+          </div>
+
+        </div>
+        <!-- End Splash Menu -->
+
+
+      </div>
+
+      <div class="divider-mobile mt-4"></div>
+
+    <!-- Carousel Kamar -->
+    <div class="container-fluid">
+      <p class="carousel-mobile-title">Pilihan Kamar</p>
+
+      <!-- Swiper Container -->
+      <div class="swiper kamarMobile">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <a href="" class="text-decoration-none">
+              <img src="asset/img/vector/zam.png" alt="Kamar 1">
+              <p class="room-title">Kamar Standart</p>
+            </a>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <a href="" class="text-decoration-none">
+              <img src="asset/img/vector/zam.png" alt="Kamar 2">
+              <p class="room-title">Kamar Deluxe</p>
+            </a>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <a href="" class="text-decoration-none">
+              <img src="asset/img/vector/zam.png" alt="Kamar 3">
+              <p class="room-title">Kamar VIP</p>
+            </a>
+          </div>
+          <!-- Tambahkan slide lain jika perlu -->
+        </div>
+
+        <!-- Navigasi -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+    </div>
+    <!-- End Carousel Kamar -->
+
+    <div class="divider-mobile mt-4"></div>
+
+    <!-- Carousel Event -->
+    <div class="container-fluid" style="margin-bottom: 100px;">
+      <p class="carousel-mobile-title">Event & Promo</p>
+
+      <!-- Swiper Container -->
+      <div class="swiper kamarMobile">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <a href="" class="text-decoration-none">
+              <img src="asset/img/vector/zam.png" alt="Kamar 1">
+              <p class="promo-title">Promo Lebaran <span>03 Jan 2025</span></p>
+            </a>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <a href="" class="text-decoration-none">
+              <img src="asset/img/vector/zam.png" alt="Kamar 2">
+              <p class="promo-title">Promo Akhir Tahun, Dapatkan Sekarang Sebelum kehabisan <span>03 Jan 2025</span></p>
+            </a>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <a href="" class="text-decoration-none">
+              <img src="asset/img/vector/zam.png" alt="Kamar 3">
+              <p class="promo-title">Promo Reservasi <span>03 Jan 2025</span></p>
+            </a>
+          </div>
+          <!-- Tambahkan slide lain jika perlu -->
+        </div>
+
+        <!-- Navigasi -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+    </div>
+
+    <!-- End Carousel Event -->
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-bar">
+      <div class="container-fluid">
+        <div class="row justify-content-around">
+          <!-- Menu 1 -->
+          <div class="col text-center">
+            <a href="index.html" class="active">
+              <img src="asset/img/vector/icon/home.png" alt="Home">
+              <p>Home</p>
+            </a>
+          </div>
+          <!-- Menu 2 -->
+          <div class="col text-center">
+            <a href="index.html">
+              <img src="asset/img/vector/icon/event.png" alt="Search">
+              <p>Event</p>
+            </a>
+          </div>
+          <!-- Menu 3 -->
+          <div class="col text-center">
+            <a href="index.html">
+              <img src="asset/img/vector/icon/reserv.png" alt="Booking">
+              <p>Reservation</p>
+            </a>
+          </div>
+          <!-- Menu 4 -->
+          <div class="col text-center">
+            <a href="#">
+              <img src="asset/img/vector/icon/gallery.png" alt="Notifications">
+              <p>Gallery</p>
+            </a>
+          </div>
+          <!-- Menu 5 -->
+          <div class="col text-center">
+            <a href="#">
+              <img src="asset/img/vector/icon/contact.png" alt="Profile">
+              <p>Contact</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Bottom Bar -->
+
+    </div>
+
+
+
+
+    <!--Script-->
+    <script src="vendor/swiper/package/swiper-bundle.min.js"></script>
+    <script src="vendor/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+      var swiper = new Swiper(".kamarMobile", {
+        slidesPerView: 1.2,  // 1 slide penuh + sedikit dari slide berikutnya
+        spaceBetween: 0,  // Jarak antar slide
+        loop: true,
+        centeredSlides: true, // Fokus di tengah
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: { slidesPerView: 1.5, spaceBetween: 15 },
+          1024: { slidesPerView: 2.2, spaceBetween: 20 },
+        },
+      });
+    </script>
+
+    <!--Bootstrap-->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
