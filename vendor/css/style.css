@@ -684,13 +684,69 @@ label {
         opacity: 1;
     }
 
-        
-        
-        
-    
-  
+    .icon-back-nav {
+        width: 25px;
+        margin-top: 25px;
+    }
 
-      
+    /* Form Reservasi */
+    .form-mobile-title {
+        font-size: 1.2rem;
+        font-family: "Playfair Display", serif;
+        font-weight: 550;
+        text-align: center;
+    }
+
+    .label-form-android {
+        font-family: "Faculty Glyphic", serif;
+        font-size: 0.9rem;
+    }
+
+    .form-mobile {
+        width: 100%;
+        margin-top: 10px;
+        height: 45px;
+        border: none;
+        font-size: 0.8em;
+        font-family: "Faculty Glyphic", serif;
+        outline: none;
+        border-bottom: 1px solid #39290a;
+    }
+
+    .form-mobile-textarea {
+        width: 100%;
+        margin-top: 10px;
+        border: none;
+        font-size: 0.8em;
+        font-family: "Faculty Glyphic", serif;
+        outline: none;
+        border-bottom: 1px solid #39290a;
+    }
+
+    .form-mobile::placeholder {
+        font-size: 0.8rem;
+        font-family: "Faculty Glyphic", serif;
+    }
+
+    .form-mobile:focus {
+        outline: 1px solid #ffebc4; /* Menambahkan outline saat input diklik */
+    }
+    .border-mobile {
+        width: 50%;
+        margin-top: -20px;
+    }
+    .alert-form-mobile {
+        font-size: 0.6rem;
+        font-family: "Faculty Glyphic", serif;
+        color: red;
+    }
+    .btn-form-mobile {
+        color: #fff;
+        background-color: #39290a;
+        font-family: "Faculty Glyphic", serif;
+        padding: 5px 15px;
+        border: none;
+        font-size: 0.9rem;
+    }
 }
 
-/* End Heroes */

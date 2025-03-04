@@ -120,4 +120,27 @@ document.addEventListener("DOMContentLoaded", function () {
         this.classList.add("active");
       });
     });
-  });
+});
+
+// Fungsi untuk Kode Undangan
+document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const kodeUndangan = urlParams.get("kode");
+
+    if (kodeUndangan) {
+        const inputField = document.getElementById("kodeUndangan");
+        inputField.value = kodeUndangan;
+        inputField.disabled = true;
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const kodeUndangan = urlParams.get("kode");
+
+    if (kodeUndangan) {
+        const inputField = document.getElementById("kode");
+        inputField.value = kodeUndangan;
+        inputField.disabled = true;
+    }
+});

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>ZAM Hotel</title>
     <link rel="shortcut icon" href="asset/img/logo/zam.png" type="image/x-icon">
     <!--CSS-->
@@ -17,8 +17,9 @@
 </head>
 <body>
 
-    <!--Header Section-->
-    <header class="header sticky-top">
+    <div class="desktop">
+      <!--Header Section-->
+      <header class="header sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
               <a class="navbar-brand" href="#">
@@ -73,11 +74,12 @@
         <div class="row">
             <div class="col-sm-12 col-12 text-center my-5 py-5">
               <h5 class="heroes-title" data-aos="fade-up" data-aos-duration="1000"><span class="heroes-title-sub">Reservation</span></h5>
-              <p class="heroes-sub-title" data-aos="fade-up" data-aos-duration="1200">Reservasi, Restoran & Kuliner</p>              
+              <p class="heroes-sub-title" data-aos="fade-up" data-aos-duration="1200">
+                <span><a href="index.html" class="text-decoration-none">Home </a> / </span> <span>Reservation</span>
+              </p>              
             </div>
         </div>
     </section>
-
     <!-- End Heroes / Carousel-->
 
 
@@ -119,19 +121,28 @@
 
                     <div class="mb-3">
                         <select name="tipe" id="tipe" class="form-reservation">
-                            <option value="">== Pilih Tipe Kamar ==</option>
+                            <option value="">== Pilih Room ==</option>
+                            <option value="Standart">Standart</option>
                             <option value="Deluxe">Deluxe</option>
-                            <option value="Deluxe">Suite</option>
-                            <option value="Deluxe">BaalRoom</option>
+                            <option value="Suite">Suite</option>
+                            <option value="VIP">VIP</option>
+                            <option value="Private Room  Restaurant">Private Room   Restaurant</option>
+                            <option value="BaalRoom">BaalRoom</option>
+                            <option value="Meeting Room">Meeting Room</option>
+                            <option value="Restaurant">Restaurant</option>
                         </select>
                     </div>
 
                     <div class="mb-3">
                         <input type="text" id="kodeUndangan" class="form-reservation" placeholder="Kode Undangan">
                     </div>
+
+                    <div class="mb-3">
+                        <textarea name="message" class="form-reservation" rows="4" id="message" placeholder="Note Tambahan Jika Ada"></textarea>
+                    </div>
                     
                     <div class="mb-3">
-                        <button class="btn" style="background-color: #39290a;color: #fff;">Reservation</button>
+                        <button class="btn" style="background-color: #39290a;color: #fff;">Submit</button>
                     </div>
                 </div>
             </div>
@@ -146,7 +157,6 @@
 
 
     <!-- Footer -->
-
     <footer class="footer">
       <div class="container">
         <div class="row mt-5">
@@ -180,12 +190,138 @@
         </div>
       </div>
     </footer>
-
-
-
-
     <!-- End Footer -->
 
+    </div>
+
+
+    <div class="mobile">
+      <div class="container-fluid mt-2 topbar-mobile">
+
+        <!-- Logo -->
+        <div class="row">
+          <div class="col-6 col-sm-6">
+            <img src="asset/img/logo/zam-mobile.png" class="logo-mobile" alt="">
+          </div>
+          <div class="col-6 col-sm-6 text-end">
+            <a href="index.html"><img src="asset/img/vector/icon/home.png" class="icon-back-nav" alt=""></a>
+          </div>
+        </div>
+        <!-- End Logo -->
+
+      </div>
+
+      <div class="divider-mobile mt-4"></div>
+
+    <!-- Carousel Kamar -->
+    <div class="container-fluid mt-4">
+      <p class="form-mobile-title">Reservation</p>
+    </div>
+
+    <div class="container text-center">
+      <img src="asset/img/vector/border.png" class="border-mobile" alt="">
+    </div>
+
+    <div class="container mt-3" style="margin-bottom: 150px;">
+      <form action="">
+
+        <div class="mb-3">
+          <label for="nama" class="label-form-android">Nama Lengkap <span class="alert-form-mobile">*Wajib diisi</span>
+          </label>
+          <input type="text" id="nama" class="form-mobile" required placeholder="Masukan Nama Lengkap" name="nama">
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="label-form-android">No.HP / What'sApp <span class="alert-form-mobile">*Wajib diisi</span>
+          </label>
+          <input type="text" id="phone" class="form-mobile" required placeholder="Masukan No What'sApp/Telephone" name="phone">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="label-form-android">Email</label>
+          <input type="email" id="email" class="form-mobile" required placeholder="Masukan Email" name="email">
+        </div>
+
+        <div class="mb-3">
+          <label for="kamar" class="label-form-android">Pilih Room</label>
+          <select name="kamar" id="kamar" class="form-mobile" required>
+            <option value="">== Pilih Room ==</option>
+            <option value="Standart">Standart</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Suite">Suite</option>
+            <option value="VIP">VIP</option>
+            <option value="Private Room  Restaurant">Private Room   Restaurant</option>
+            <option value="BaalRoom">BaalRoom</option>
+            <option value="Meeting Room">Meeting Room</option>
+            <option value="Restaurant">Restaurant</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="kode" class="label-form-android">Kode Undangan</label>
+          <input type="kode" id="kode" class="form-mobile" required placeholder="Masukan Kode Undangan Jika ada" name="kode">
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="label-form-android">Message</label>
+          <textarea name="message" class="form-mobile-textarea" rows="4" id="message" placeholder="Note Tambahan Jika Ada"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn-form-mobile">Submit</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- End Carousel Kamar -->
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-bar">
+      <div class="container-fluid">
+        <div class="row justify-content-around">
+          <!-- Menu 1 -->
+          <div class="col text-center">
+            <a href="index.html">
+              <img src="asset/img/vector/icon/home.png" alt="Home">
+              <p>Home</p>
+            </a>
+          </div>
+          <!-- Menu 2 -->
+          <div class="col text-center">
+            <a href="index.html">
+              <img src="asset/img/vector/icon/event.png" alt="Search">
+              <p>Event</p>
+            </a>
+          </div>
+          <!-- Menu 3 -->
+          <div class="col text-center">
+            <a href="reservation.html" class="active">
+              <img src="asset/img/vector/icon/reserv.png" alt="Booking">
+              <p>Reservation</p>
+            </a>
+          </div>
+          <!-- Menu 4 -->
+          <div class="col text-center">
+            <a href="#">
+              <img src="asset/img/vector/icon/gallery.png" alt="Notifications">
+              <p>Gallery</p>
+            </a>
+          </div>
+          <!-- Menu 5 -->
+          <div class="col text-center">
+            <a href="#">
+              <img src="asset/img/vector/icon/contact.png" alt="Profile">
+              <p>Contact</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Bottom Bar -->
+
+    </div>
 
 
 
@@ -197,38 +333,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,  // Infinite looping
-            autoplay: {
-                delay: 4000, // 4 detik per slide
-                disableOnInteraction: false
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            }
-        });
-    </script>    
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const urlParams = new URLSearchParams(window.location.search);
-        const kodeUndangan = urlParams.get("kode");
-
-        if (kodeUndangan) {
-            const inputField = document.getElementById("kodeUndangan");
-            inputField.value = kodeUndangan;
-            inputField.disabled = true;
-        }
-    });
-</script>
+    </script> 
 
     <!--Bootstrap-->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
